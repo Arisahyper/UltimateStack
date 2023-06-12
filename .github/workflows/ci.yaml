@@ -15,6 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up environment variables
+        run: |
+          export DATABASE_URL=""
+          export NEXTAUTH_SECRET=""
+          export NEXTAUTH_URL=""
+          export DISCORD_CLIENT_ID=""
+          export DISCORD_CLIENT_SECRET=""
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
