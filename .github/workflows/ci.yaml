@@ -17,11 +17,11 @@ jobs:
     steps:
       - name: Set up environment variables
         run: |
-          export DATABASE_URL="your-database-url"
-          export NEXTAUTH_SECRET="your-nextauth-secret"
-          export NEXTAUTH_URL="your-nextauth-url"
-          export DISCORD_CLIENT_ID="your-discord-client-id"
-          export DISCORD_CLIENT_SECRET="your-discord-client-secret"
+          echo "DATABASE_URL=your_database_url" >> $GITHUB_ENV
+          echo "NEXTAUTH_SECRET=your_nextauth_secret" >> $GITHUB_ENV
+          echo "NEXTAUTH_URL=your_nextauth_url" >> $GITHUB_ENV
+          echo "DISCORD_CLIENT_ID=your_discord_client_id" >> $GITHUB_ENV
+          echo "DISCORD_CLIENT_SECRET=your_discord_client_secret" >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v2
