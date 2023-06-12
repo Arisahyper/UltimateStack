@@ -17,11 +17,11 @@ jobs:
     steps:
       - name: Set up environment variables
         run: |
-          export DATABASE_URL=""
-          export NEXTAUTH_SECRET=""
-          export NEXTAUTH_URL=""
-          export DISCORD_CLIENT_ID=""
-          export DISCORD_CLIENT_SECRET=""
+          export DATABASE_URL="your-database-url"
+          export NEXTAUTH_SECRET="your-nextauth-secret"
+          export NEXTAUTH_URL="your-nextauth-url"
+          export DISCORD_CLIENT_ID="your-discord-client-id"
+          export DISCORD_CLIENT_SECRET="your-discord-client-secret"
 
       - name: Checkout repository
         uses: actions/checkout@v2
